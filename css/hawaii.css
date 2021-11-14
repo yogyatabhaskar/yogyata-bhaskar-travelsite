@@ -1,3 +1,13 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  overflow: auto;
+}
+
 h1 {
   font-size: 2rem;
   font-weight: 700;
@@ -23,14 +33,60 @@ li {
   font-weight: 200;
 }
 
-*, *::before, *::after {
-  box-sizing: border-box;
+.destination {
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 47rem;
+  margin-top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.destination__name {
+  font-size: 4rem;
+  color: #ffffff;
+  margin-left: 8rem;
+  margin-bottom: 1rem;
+}
+.destination__content {
+  display: flex;
+  margin: 6rem;
+  justify-content: space-evenly;
+}
+.destination__info {
+  background-color: #ffffff;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 15.5rem;
+  height: 21.5rem;
+  border-radius: 0.3125rem;
+  box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.2);
+}
+.destination__day {
+  border-bottom: 0.2rem solid black;
+  padding: 0 4rem;
+  margin-bottom: 0;
+}
+.destination__schedule {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  margin-bottom: 3rem;
+}
+.destination__activity {
+  list-style: none;
+  background-color: #FEFAF5;
+  padding: 1rem 3rem;
+  margin-bottom: 0.5rem;
 }
 
-body {
-  margin: 0;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  overflow: auto;
+.destination {
+  background-image: url(../../assets/Images/hawaii.jpg);
 }
 
 .header {
@@ -71,42 +127,6 @@ body {
 }
 .navigation__link:visited {
   color: black;
-}
-
-.card {
-  background-color: #ffffff;
-  padding-left: 3rem;
-}
-.card__title {
-  color: #335576;
-}
-.card__content {
-  display: flex;
-  margin: 6rem;
-  justify-content: space-around;
-}
-.card__info {
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: space-evenly;
-  align-items: center;
-  width: 15.625rem;
-  height: 19.125rem;
-}
-.card__destination-img {
-  width: 15.625rem;
-  height: 23.125rem;
-  -o-object-fit: cover;
-     object-fit: cover;
-  margin: -3rem;
-  border-radius: 0.3125rem;
-  box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.2);
-}
-.card__name {
-  color: #ffffff;
-  position: absolute;
-  margin-bottom: -19rem;
-  margin-left: 9rem;
 }
 
 .footer {
@@ -151,35 +171,4 @@ body {
   margin-top: 1rem;
   width: -0.5rem;
   height: 1rem;
-}
-
-.hero {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding: 3rem;
-  background-color: #FEFAF5;
-}
-.hero__info {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  width: 32rem;
-}
-.hero__heading {
-  color: #335576;
-}
-.hero__description {
-  color: #335576;
-}
-.hero__link {
-  text-decoration: none;
-  background-color: #DB7A4E;
-  padding: 0.5rem 2.5rem;
-  color: #ffffff;
-  border-radius: 2rem;
-}
-.hero__picture {
-  width: 28rem;
-  height: 23rem;
-}/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=hawaii.css.map */

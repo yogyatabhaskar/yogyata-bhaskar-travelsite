@@ -7,8 +7,9 @@
     background-color: variables.$color-quaternary;
     display: flex;
     justify-content: space-evenly;
-    align-items: flex-start;
+    align-items: center;
     position: relative;
+    height: 10rem;
     
     &__items {
         position: relative;

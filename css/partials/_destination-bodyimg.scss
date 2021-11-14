@@ -1,0 +1,64 @@
+@use './global';
+@use './mixins';
+@use './typography';
+@use './variables';
+
+.destination{
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 47rem;
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    &__name{
+        @include mixins.card-title;
+        margin-left: 8rem;
+        margin-bottom: 1rem;
+    }
+
+    &__content {
+        display: flex;
+        margin: 6rem;
+        justify-content: space-evenly;
+    }
+
+    &__info{
+        background-color: variables.$color-primary;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-between;
+        align-items: center;
+        width: 15.5rem;
+        height: 21.5rem;
+        border-radius: .3125rem;
+        box-shadow: 0 .25rem .25rem variables.$color-senary;
+    }
+
+    &__day{
+        border-bottom: .2rem solid  variables.$color-quinary;
+        padding: 0 4rem;
+        margin-bottom: 0;
+    }
+
+    &__schedule{
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        padding-left: 3rem;
+        padding-right: 3rem;
+        margin-bottom: 3rem;
+    }
+
+    &__activity {
+        list-style: none;
+        background-color: variables.$color-quaternary;
+        padding: 1rem 3rem;
+        margin-bottom: 0.5rem;
+    }
+}
+
+
+
