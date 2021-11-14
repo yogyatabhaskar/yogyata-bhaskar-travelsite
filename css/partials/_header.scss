@@ -1,5 +1,47 @@
+@use './variables';
+@use './typography';
+@use './mixins';
+
 
 .header {
     display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 3rem;
+    background-color: variables.$color-primary;
     
+    &__logo{
+        text-decoration: none;
+        color: variables.$color-secondary;
+
+            &:visited {
+                color: variables.$color-secondary;
+
+            }
+    }
+}
+
+.navigation {
+    padding: 1rem;
+
+    &__list{
+        @include mixins.reset-list;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__link {
+        text-decoration: none;
+        margin-left: 1rem;
+        padding-bottom: 0.5rem;
+        color: variables.$color-secondary;
+
+            &--active{
+                border-bottom: 0.2rem solid variables.$color-tertiary;
+            }
+
+            &:visited{
+                color: variables.$color-secondary;
+            }
+    }
+
 }

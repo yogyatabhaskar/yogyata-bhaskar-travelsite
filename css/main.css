@@ -1,0 +1,55 @@
+h3 {
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+
+li {
+  font-size: 16px;
+  font-weight: 100;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 3rem;
+  background-color: #ffffff;
+}
+.header__logo {
+  text-decoration: none;
+  color: #335576;
+}
+.header__logo:visited {
+  color: #335576;
+}
+
+.navigation {
+  padding: 1rem;
+}
+.navigation__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+.navigation__link {
+  text-decoration: none;
+  margin-left: 1rem;
+  padding-bottom: 0.5rem;
+  color: #335576;
+}
+.navigation__link--active {
+  border-bottom: 0.2rem solid #DB7A4E;
+}
+.navigation__link:visited {
+  color: #335576;
+}/*# sourceMappingURL=main.css.map */
