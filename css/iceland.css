@@ -1,0 +1,174 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  overflow: auto;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+
+p {
+  font-size: 0.8rem;
+  font-weight: 100;
+}
+
+li {
+  font-size: 16px;
+  font-weight: 200;
+}
+
+.destination {
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 47rem;
+  margin-top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.destination__name {
+  font-size: 4rem;
+  color: #ffffff;
+  margin-left: 8rem;
+  margin-bottom: 1rem;
+}
+.destination__content {
+  display: flex;
+  margin: 6rem;
+  justify-content: space-evenly;
+}
+.destination__info {
+  background-color: #ffffff;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 15.5rem;
+  height: 21.5rem;
+  border-radius: 0.3125rem;
+  box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.2);
+}
+.destination__day {
+  border-bottom: 0.2rem solid black;
+  padding: 0 4rem;
+  margin-bottom: 0;
+}
+.destination__schedule {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  margin-bottom: 3rem;
+}
+.destination__activity {
+  list-style: none;
+  background-color: #FEFAF5;
+  padding: 1rem 3rem;
+  margin-bottom: 0.5rem;
+}
+
+.destination {
+  background-image: url(../../assets/Images/iceland.jpg);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 3rem;
+  background-color: #ffffff;
+}
+.header__logo {
+  text-decoration: none;
+  color: #335576;
+}
+.header__logo:visited {
+  color: #335576;
+}
+
+.navigation {
+  padding: 0 1rem;
+}
+.navigation__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+.navigation__link {
+  font-size: 1rem;
+  font-weight: 100;
+  text-decoration: none;
+  margin-left: 1rem;
+  padding-bottom: 0.5rem;
+  color: black;
+}
+.navigation__link--active {
+  border-bottom: 0.2rem solid #DB7A4E;
+}
+.navigation__link:visited {
+  color: black;
+}
+
+.footer {
+  background-color: #FEFAF5;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  position: relative;
+  height: 10rem;
+}
+.footer__items {
+  position: relative;
+  left: 2rem;
+}
+.footer__title {
+  color: #335576;
+}
+.footer__subtitle {
+  color: #DB7A4E;
+  font-size: x-small;
+}
+.footer__subtitle--margin {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.footer__text {
+  color: #335576;
+}
+.footer__timings {
+  display: flex;
+}
+.footer__hours {
+  display: flex;
+  flex-direction: column;
+  padding-right: 2rem;
+}
+.footer__link {
+  width: 2rem;
+  height: 2rem;
+}
+.footer__logo {
+  margin-top: 1rem;
+  width: -0.5rem;
+  height: 1rem;
+}/*# sourceMappingURL=iceland.css.map */
