@@ -6,7 +6,8 @@
 .header {
     display: flex;
     justify-content: space-between;
-    padding: 0.5rem 3rem;
+    align-items: center;
+    padding: 0 3rem;
     background-color: variables.$color-primary;
     
     &__logo{
@@ -15,13 +16,12 @@
 
             &:visited {
                 color: variables.$color-secondary;
-
             }
     }
 }
 
 .navigation {
-    padding: 1rem;
+    padding: 0 1rem;
 
     &__list{
         @include mixins.reset-list;
@@ -30,18 +30,17 @@
     }
 
     &__link {
-        text-decoration: none;
-        margin-left: 1rem;
-        padding-bottom: 0.5rem;
-        color: variables.$color-secondary;
+        @include mixins.nav-link;
+        color: variables.$color-quinary;
+        
 
-            &--active{
-                border-bottom: 0.2rem solid variables.$color-tertiary;
-            }
+        &--active{
+            border-bottom: 0.2rem solid variables.$color-tertiary;
+        }
 
-            &:visited{
-                color: variables.$color-secondary;
-            }
+        &:visited{
+            color: variables.$color-quinary;
+        }
     }
 
 }

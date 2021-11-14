@@ -1,1 +1,41 @@
+@use './mixins';
+@use './typography';
+@use './variables';
+@use './global';
 
+.hero {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 3rem;
+    background-color: variables.$color-quaternary;
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 32rem;
+    }    
+
+    &__heading {
+        color: variables.$color-secondary;
+    }
+
+    &__description {
+        color: variables.$color-secondary;
+
+    }
+
+    &__link {
+        text-decoration: none;
+        background-color: variables.$color-tertiary;
+        padding: 0.5rem 2.5rem;
+        color: variables.$color-primary;
+        border-radius: 2rem;
+    }
+
+    &__picture{
+        width: 28rem;
+        height: 23rem;
+    }
+}
