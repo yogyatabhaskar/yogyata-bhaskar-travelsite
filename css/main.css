@@ -109,6 +109,49 @@ body {
   margin-left: 9rem;
 }
 
+.footer {
+  background-color: #FEFAF5;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  position: relative;
+}
+.footer__items {
+  position: relative;
+  left: 2rem;
+}
+.footer__title {
+  color: #335576;
+}
+.footer__subtitle {
+  color: #DB7A4E;
+  font-size: x-small;
+}
+.footer__subtitle--margin {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.footer__text {
+  color: #335576;
+}
+.footer__timings {
+  display: flex;
+}
+.footer__hours {
+  display: flex;
+  flex-direction: column;
+  padding-right: 2rem;
+}
+.footer__link {
+  width: 2rem;
+  height: 2rem;
+}
+.footer__logo {
+  margin-top: 1rem;
+  width: -0.5rem;
+  height: 1rem;
+}
+
 .hero {
   display: flex;
   flex-direction: row;
