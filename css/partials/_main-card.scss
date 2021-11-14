@@ -1,0 +1,50 @@
+@use './mixins';
+@use './typography';
+@use './variables';
+@use './global';
+
+.card {
+    background-color: variables.$color-primary;
+    padding-left: 3rem;
+
+    &__title {
+        color: variables.$color-secondary;
+        
+    }
+
+    &__content{
+        display: flex;
+        margin: 6rem;
+        justify-content: space-around;
+        
+       
+    }
+
+    &__info {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 15.625rem;
+        height: 19.125rem;
+        
+
+    }
+
+
+    &__destination-img{
+        width: 15.625rem;
+        height: 23.125rem;
+        object-fit: cover;
+        margin: -3rem;
+        border-radius: .3125rem;
+        box-shadow: 0 .25rem .25rem variables.$color-senary;
+    }
+
+    &__name{
+        color: variables.$color-primary;
+        position: absolute;
+        margin-bottom: -19rem;
+        margin-left: 9rem;
+}
+}
