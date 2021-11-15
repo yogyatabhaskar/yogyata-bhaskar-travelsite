@@ -44,14 +44,15 @@ li {
   justify-content: center;
 }
 .destination__name {
-  font-size: 4rem;
+  font-size: 5rem;
   color: #ffffff;
-  margin-left: 8rem;
-  margin-bottom: 1rem;
+  margin-left: 10rem;
+  margin-bottom: -5rem;
 }
 .destination__content {
   display: flex;
-  margin: 6rem;
+  margin: 4rem;
+  padding: 4rem;
   justify-content: space-evenly;
 }
 .destination__info {
@@ -60,29 +61,30 @@ li {
   flex-flow: column nowrap;
   justify-content: space-between;
   align-items: center;
-  width: 15.5rem;
-  height: 21.5rem;
+  width: 18rem;
+  height: 24rem;
+  border: 0.0625rem solid rgba(0, 0, 0, 0.2);
   border-radius: 0.3125rem;
   box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.2);
 }
 .destination__day {
   border-bottom: 0.2rem solid black;
-  padding: 0 4rem;
-  margin-bottom: 0;
+  padding: 0 6rem;
+  margin: 1rem 0 0 0;
 }
 .destination__schedule {
   display: flex;
   flex-direction: column;
   align-items: stretch;
-  padding-left: 3rem;
+  padding-left: 2rem;
   padding-right: 3rem;
-  margin-bottom: 3rem;
+  margin: 0 4rem 4rem 4rem;
 }
 .destination__activity {
   list-style: none;
   background-color: #FEFAF5;
-  padding: 1rem 3rem;
-  margin-bottom: 0.5rem;
+  padding: 1rem 5.5rem;
+  margin: 1rem 0 0 1.5rem;
 }
 
 .destination {
@@ -90,6 +92,8 @@ li {
 }
 
 .header {
+  position: fixed;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -133,13 +137,18 @@ li {
   background-color: #FEFAF5;
   display: flex;
   justify-content: space-evenly;
+  justify-content: space-between;
+  padding: 5rem;
   align-items: center;
   position: relative;
   height: 10rem;
 }
 .footer__items {
-  position: relative;
-  left: 2rem;
+  margin: 5rem;
+  height: 129px;
+}
+.footer__social {
+  width: 7.5rem;
 }
 .footer__title {
   color: #335576;
@@ -164,11 +173,10 @@ li {
   padding-right: 2rem;
 }
 .footer__link {
-  width: 2rem;
-  height: 2rem;
+  padding: 0.25rem;
 }
 .footer__logo {
   margin-top: 1rem;
   width: -0.5rem;
-  height: 1rem;
+  height: 1.25rem;
 }/*# sourceMappingURL=greece.css.map */

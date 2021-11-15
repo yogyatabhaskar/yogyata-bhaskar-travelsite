@@ -15,13 +15,15 @@
 
     &__name{
         @include mixins.card-title;
-        margin-left: 8rem;
-        margin-bottom: 1rem;
+        margin-left: 10rem;
+        margin-bottom: -5rem;
+        
     }
 
     &__content {
         display: flex;
-        margin: 6rem;
+        margin: 4rem;
+        padding: 4rem;
         justify-content: space-evenly;
     }
 
@@ -31,32 +33,34 @@
         flex-flow: column nowrap;
         justify-content: space-between;
         align-items: center;
-        width: 15.5rem;
-        height: 21.5rem;
+        width: 18rem;
+        height: 24rem;
+        border: .0625rem solid variables.$color-senary;
         border-radius: .3125rem;
         box-shadow: 0 .25rem .25rem variables.$color-senary;
     }
 
     &__day{
         border-bottom: .2rem solid  variables.$color-quinary;
-        padding: 0 4rem;
-        margin-bottom: 0;
+        padding: 0 6rem;
+        margin: 1rem 0 0 0;
     }
 
     &__schedule{
         display: flex;
         flex-direction: column;
         align-items: stretch;
-        padding-left: 3rem;
+        padding-left: 2rem;
         padding-right: 3rem;
-        margin-bottom: 3rem;
+        margin: 0 4rem 4rem 4rem;
     }
 
     &__activity {
         list-style: none;
         background-color: variables.$color-quaternary;
-        padding: 1rem 3rem;
-        margin-bottom: 0.5rem;
+        padding: 1rem 5.5rem;
+        margin: 1rem 0 0 1.5rem;
+        
     }
 }
 
