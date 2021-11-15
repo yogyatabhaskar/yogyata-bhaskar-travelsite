@@ -3,9 +3,9 @@
 }
 
 body {
-  margin: 0;
+  margin: 0%;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  overflow: auto;
+  max-height: 100vh;
 }
 
 h1 {
@@ -34,14 +34,16 @@ li {
 }
 
 .destination {
+  background-image: url(../../assets/Images/greece.jpg);
   background-position: center;
   background-size: cover;
   width: 100%;
-  height: 47rem;
+  height: 51rem;
   margin-top: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  overflow: auto;
 }
 .destination__name {
   font-size: 5rem;
@@ -67,6 +69,9 @@ li {
   border-radius: 0.3125rem;
   box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.2);
 }
+.destination__info:hover {
+  border: 0.1875rem solid #DB7A4E;
+}
 .destination__day {
   border-bottom: 0.2rem solid black;
   padding: 0 6rem;
@@ -87,10 +92,6 @@ li {
   margin: 1rem 0 0 1.5rem;
 }
 
-.destination {
-  background-image: url(../../assets/Images/greece.jpg);
-}
-
 .header {
   position: fixed;
   width: 100%;
@@ -99,12 +100,22 @@ li {
   align-items: center;
   padding: 0 3rem;
   background-color: #ffffff;
+  overflow: auto;
 }
 .header__logo {
   text-decoration: none;
   color: #335576;
+  text-underline-offset: 0.2em;
+  transition: text-underline-offset 400ms, -webkit-text-decoration-color 300ms;
+  transition: text-decoration-color 300ms, text-underline-offset 400ms;
+  transition: text-decoration-color 300ms, text-underline-offset 400ms, -webkit-text-decoration-color 300ms;
 }
-.header__logo:visited {
+.header__logo:hover {
+  -webkit-text-decoration: underline 0.15em #335576;
+          text-decoration: underline 0.15em #335576;
+  text-underline-offset: 0.4em;
+}
+.header__logo:hover:visited {
   color: #335576;
 }
 
@@ -125,6 +136,15 @@ li {
   margin-left: 1rem;
   padding-bottom: 0.5rem;
   color: black;
+  text-underline-offset: 0.2em;
+  transition: text-underline-offset 400ms, -webkit-text-decoration-color 300ms;
+  transition: text-decoration-color 300ms, text-underline-offset 400ms;
+  transition: text-decoration-color 300ms, text-underline-offset 400ms, -webkit-text-decoration-color 300ms;
+}
+.navigation__link:hover {
+  -webkit-text-decoration: underline 0.15em black;
+          text-decoration: underline 0.15em black;
+  text-underline-offset: 0.4em;
 }
 .navigation__link--active {
   border-bottom: 0.2rem solid #DB7A4E;
@@ -142,6 +162,7 @@ li {
   align-items: center;
   position: relative;
   height: 10rem;
+  overflow: auto;
 }
 .footer__items {
   margin: 5rem;

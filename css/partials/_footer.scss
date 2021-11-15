@@ -12,6 +12,7 @@
     align-items: center;
     position: relative;
     height: 10rem;
+    overflow: auto;
     
     &__items {
         margin: 5rem;

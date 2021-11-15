@@ -11,31 +11,48 @@
     align-items: center;
     padding: 0 3rem;
     background-color: variables.$color-primary;
+    overflow: auto;    
 
     
     &__logo{
         text-decoration: none;
         color: variables.$color-secondary;
+        text-underline-offset: 0.2em;
+        transition: text-decoration-color 300ms, text-underline-offset 400ms;
+
+        &:hover {
+            text-decoration: underline 0.15em variables.$color-secondary;
+            text-underline-offset: 0.4em;
 
             &:visited {
                 color: variables.$color-secondary;
             }
+    
+        }
     }
 }
 
 .navigation {
-    padding: 0 1rem;
+        padding: 0 1rem;
 
-    &__list{
-        @include mixins.reset-list;
-        display: flex;
-        justify-content: space-between;
-    }
+        &__list{
+            @include mixins.reset-list;
+            display: flex;
+            justify-content: space-between;    
+            }
 
-    &__link {
-        @include mixins.nav-link;
-        color: variables.$color-quinary;
-        
+        &__link {
+            @include mixins.nav-link;
+            color: variables.$color-quinary;
+            text-underline-offset: 0.2em;
+            transition: text-decoration-color 300ms, text-underline-offset 400ms;
+
+
+        &:hover {
+            text-decoration: underline 0.15em variables.$color-quinary;
+            text-underline-offset: 0.4em;
+        }
+    
 
         &--active{
             border-bottom: 0.2rem solid variables.$color-tertiary;
@@ -45,5 +62,4 @@
             color: variables.$color-quinary;
         }
     }
-
 }

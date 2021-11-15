@@ -7,18 +7,17 @@
     background-color: variables.$color-primary;
     padding-left: 3rem;
     margin-top: 3rem;
+    overflow: auto;
+
 
     &__title {
-        color: variables.$color-secondary;
-        
+        color: variables.$color-secondary;    
     }
 
     &__content{
         display: flex;
         margin: 6rem;
         justify-content: space-around;
-        
-       
     }
 
     &__info {
@@ -28,7 +27,6 @@
         align-items: center;
         width: 15.625rem;
         height: 19.125rem;
-        
 
     }
 
@@ -40,12 +38,18 @@
         margin: -3rem;
         border-radius: .3125rem;
         box-shadow: 0 .25rem .25rem variables.$color-senary;
+
+        &:hover{
+            border: .1875rem solid variables.$color-tertiary;
+            opacity: 0.5;
+        }
     }
+    
 
     &__name{
         color: variables.$color-primary;
         position: absolute;
         margin-bottom: -19rem;
         margin-left: 9rem;
-}
+    }
 }
